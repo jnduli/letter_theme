@@ -1,12 +1,26 @@
 /** formating the header **/
-.header {
-    border: 1px bottom;
-
+.header h1{
+    border-bottom: 1px solid #2b0000;
 }
 .header a{
-
     text-decoration: none;
-
+    color: #2b0000;
+}
+.header a:hover{
+    border: 1px solid #2b0000;
 }
 
+.nav{
+    background: #ffffff;
+}
+.nav a{
+    color: #550000;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #550000;
+}
+.nav a:hover{
+    border: 1px solid #550000;
+    color: #550000;
+    background: #ffffff;
+}
 /** end header **/
