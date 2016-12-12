@@ -1,0 +1,12 @@
+/** formating the header **/
+.header {
+    border: 1px bottom;
+
+}
+.header a{
+
+    text-decoration: none;
+
+}
+
+/** end header **/
