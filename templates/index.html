@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+    {% block content_title %}
+    <h2>All articles</h2>
+    {% endblock %}
+
+    <div class="row">
+        <div class="col c9">
+            {% for article in articles_page.object_list %}
+            <article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <footer class="post-info">
+                    <div class = row>
+                    <time class="published col c3" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                    <address class="vcard author col c3">By
+                        {% for author in article.authors %}
+                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                        {% endfor %}
+                    </address>
+                    </div>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+            </article>
+
+            {% endfor %}
+        </div>
+        {% include 'sidebar.html'  %}
+
+        
+    </div>
+
+    {% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+    {% endif %}
+</section><!-- /#content -->
+{% endblock content %}

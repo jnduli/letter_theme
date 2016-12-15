@@ -1,0 +1,20 @@
+<div class = 'col c3' >
+    <h4>Categories</h4>
+    {% if categories %}
+    <ul class="blank">
+        {% for cat, null in categories %}
+        <li><a href="{{ SITEURL }}/{{ cat.url|e }}">{{ cat }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h4>Tags</h4>
+    {% if tags %}
+    <ul class="blank">
+        {% for tag in tag_cloud %}
+        <li><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</div>

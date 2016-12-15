@@ -1,26 +1,56 @@
+body{
+    font-family: monospace;
+}
 /** formating the header **/
 .header h1{
-    border-bottom: 1px solid #2b0000;
+    border-bottom: 1px solid #333333;
 }
 .header a{
     text-decoration: none;
-    color: #2b0000;
+    color: #000;
 }
 .header a:hover{
-    border: 1px solid #2b0000;
+    border: 1px solid #333333;
 }
-
 .nav{
     background: #ffffff;
 }
 .nav a{
-    color: #550000;
+    color: #000;
     font-size: 1.5rem;
-    border-bottom: 1px solid #550000;
+    border-bottom: 1px solid #333333;
 }
 .nav a:hover{
-    border: 1px solid #550000;
-    color: #550000;
+    border: 1px solid #333333;
+    color: #333333;
     background: #ffffff;
 }
 /** end header **/
+
+/** index **/
+#content h2{
+    color: #333333;
+    font-size: 1.8rem;
+}
+.entry-title{
+    font-size: 1.5rem;
+}
+.entry-title a{
+    color: #000;
+}
+.entry-title a:hover{
+    border: 1px solid #333333;
+}
+
+.hentry h2{
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+.post-info{
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    font-style: italic;
+
+}
+/** end of index **/
+

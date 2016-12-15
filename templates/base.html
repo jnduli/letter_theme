@@ -32,28 +32,11 @@
         <link rel="stylesheet" href="{{  SITEURL  }}/theme/css/entireframework.min.css">
         <link rel="stylesheet" href="{{  SITEURL
         }}/theme/css/style.css">
-        <link rel="stylesheet" href="{{  SITEURL  }}/theme/css/pygments.css">
+        <link rel="stylesheet" href="{{  SITEURL  }}/theme/css/pygment.css">
     </head>
 
     <body id="index" class="home container">
-        <header id="banner" class="header">
-            <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu" class="nav" tabindex="-1">
-                {% for title, link in MENUITEMS %}
-                <a href="{{ link }}">{{ title }}</a>
-                {% endfor %}
-                {% if DISPLAY_PAGES_ON_MENU %}
-                {% for p in pages %}
-                <a  {% if p == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-                {% endfor %}
-                {% endif %}
-                {% if DISPLAY_CATEGORIES_ON_MENU %}
-                {% for cat, null in categories %}
-                <a {% if cat == category %} class="active"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-                {% endfor %}
-                {% endif %}
-        </nav><!-- /#menu -->
+        {% include "include/navigation.html" %}
         {% block content %}
         {% endblock %}
         <footer id="contentinfo" class="body">
