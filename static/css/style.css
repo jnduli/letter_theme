@@ -1,9 +1,20 @@
+/** importing fonts to use in the site **/
+/** font for navigation bar **/
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
 body{
     font-family: monospace;
 }
 /** formating the header **/
+.header {
+    font-family: 'Oxygen', sans-serif;
+}
 .header h1{
     border-bottom: 1px solid #333333;
+    text-align: center;
 }
 .header a{
     text-decoration: none;
@@ -11,17 +22,28 @@ body{
 }
 .header a:hover{
     border: 1px solid #333333;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .nav{
     background: #ffffff;
+    text-align: center;
 }
 .nav a{
     color: #000;
     font-size: 1.5rem;
+    text-align: center;
+}
+.nav a.active{
+    color: #333333;
+    font-weight: bold;
+    background: #ffffff;
     border-bottom: 1px solid #333333;
 }
 .nav a:hover{
     border: 1px solid #333333;
+    padding: 20px;
     color: #333333;
     background: #ffffff;
 }
@@ -31,15 +53,28 @@ body{
 #content h2{
     color: #333333;
     font-size: 1.8rem;
+    font-family: 'Gentium Book Basic', serif;
 }
 .entry-title{
     font-size: 1.5rem;
+    font-family: 'Gentium Book Basic', serif;
 }
 .entry-title a{
     color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
 }
 .entry-title a:hover{
     border: 1px solid #333333;
+    padding: 20px;
+}
+
+.entry-content{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+}
+.highlight{
+    font-size: 0.8em;
 }
 
 .hentry h2{
@@ -53,4 +88,25 @@ body{
 
 }
 /** end of index **/
+/** SIdecar **/
+/** TODO: add screen sizes for paddings **/
+.sidebar h4{
+    padding-left: 10rem;
+}
+.c3 h4{
 
+}
+
+.sidebar ul{
+    list-style-type: circle;
+    text-align: left;
+    font-family: sans-serif;
+    color: #005544;
+    padding-left: 15rem;
+}
+.sidebar ul li{
+    padding-bottom: 0.7rem;
+}
+.sidebar ul a{
+    color: #005544;
+}
