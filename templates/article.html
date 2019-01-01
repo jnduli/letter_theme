@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content" class="article-content">
+    {% block content_title %}
+    <header>
+      <h1 class="entry-title">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+           title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h1>
+    </header>
+    {% endblock %}
+
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+</section>
+
+{% endblock content %}
+
