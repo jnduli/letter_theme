@@ -7,6 +7,11 @@
 
 body{
     font-family: monospace;
+    background: #eeeeee;
+    color: #444444; 
+}
+body a{
+    color: #005544;
 }
 /** formating the header **/
 .header {
@@ -18,7 +23,7 @@ body{
 }
 .header a{
     text-decoration: none;
-    color: #000;
+    color: #444444;
 }
 .header a:hover{
     border: 1px solid #333333;
@@ -27,37 +32,43 @@ body{
     padding-top: 20px;
 }
 .nav{
-    background: #ffffff;
     text-align: center;
+    background: #eeeeee;
 }
 .nav a{
-    color: #000;
+    color: #444444;
     font-size: 1.5rem;
     text-align: center;
 }
 .nav a.active{
     color: #333333;
     font-weight: bold;
-    background: #ffffff;
+    background: #eeeeee;
     border-bottom: 1px solid #333333;
 }
 .nav a:hover{
     border: 1px solid #333333;
     padding: 20px;
     color: #333333;
-    background: #ffffff;
+    background: #eeeeee;
 }
 /** end header **/
 
 /** index **/
 #content h2{
     color: #333333;
-    font-size: 1.8rem;
-    font-family: 'Gentium Book Basic', serif;
+}
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 60px 40px 100px 40px;
 }
 .entry-title{
     font-size: 1.5rem;
-    font-family: 'Gentium Book Basic', serif;
 }
 .entry-title a{
     color: #000;
@@ -71,7 +82,7 @@ body{
 
 .entry-content{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 .highlight{
     font-size: 0.7em;
