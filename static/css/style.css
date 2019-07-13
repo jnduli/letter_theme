@@ -20,16 +20,17 @@ body a{
 .header h1{
     border-bottom: 1px solid #333333;
     text-align: center;
+    font-size: 2.0em;
 }
 .header a{
     text-decoration: none;
     color: #444444;
-}
-.header a:hover{
-    border: 1px solid #333333;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 20px;
+    border: 2px solid transparent;
+}
+.header a:hover{
+    border: 2px solid #333333;
 }
 .nav{
     text-align: center;
@@ -39,46 +40,49 @@ body a{
     color: #444444;
     font-size: 1.5rem;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid transparent;
 }
 .nav a.active{
     color: #333333;
     font-weight: bold;
     background: #eeeeee;
-    border-bottom: 1px solid #333333;
+    border-bottom: 2px solid #333333;
 }
 .nav a:hover{
-    border: 1px solid #333333;
-    padding: 20px;
+    border: 2px solid #333333;
     color: #333333;
     background: #eeeeee;
 }
 /** end header **/
 
 /** index **/
+#content {
+    padding: 20px 100px 0px 100px;
+}
 #content h2{
     color: #333333;
     font-size: 1.5em;
 }
 .article-content {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
     padding: 60px 40px 100px 40px;
 }
 .entry-title{
     font-size: 1.5rem;
 }
 .entry-title a{
-    color: #000;
+    color: #444444;
     text-decoration: none;
     border-bottom: 1px solid #333333;
+    border: 2px solid transparent;
 }
 .entry-title a:hover{
-    border: 1px solid #333333;
-    padding: 20px;
+    border: 2px solid #333333;
+    color: #333333;
+    background: #eeeeee;
 }
 
 .entry-content{
@@ -90,6 +94,10 @@ body a{
     overflow: scroll;
 }
 
+.hentry {
+    max-width: 600px;
+    margin: 0 auto;
+}
 .hentry h2{
     margin-bottom: 1px;
     padding-bottom: 1px;
@@ -103,19 +111,19 @@ body a{
 /** end of index **/
 /** SIdecar **/
 /** TODO: add screen sizes for paddings **/
-.sidebar h4{
-    padding-left: 10rem;
-}
-.c3 h4{
-
-}
+/* .sidebar h4{ */
+    /* padding-left: 10rem; */
+/* } */
+/* .c3 h4{ */
+/*  */
+/* } */
 
 .sidebar ul{
     list-style-type: circle;
     text-align: left;
     font-family: sans-serif;
     color: #005544;
-    padding-left: 15rem;
+    /* padding-left: 15rem; */
 }
 .sidebar ul li{
     padding-bottom: 0.7rem;
