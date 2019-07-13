@@ -109,14 +109,7 @@ body a{
 
 }
 /** end of index **/
-/** SIdecar **/
-/** TODO: add screen sizes for paddings **/
-/* .sidebar h4{ */
-    /* padding-left: 10rem; */
-/* } */
-/* .c3 h4{ */
-/*  */
-/* } */
+/** Sidebar **/
 
 .sidebar ul{
     list-style-type: circle;
@@ -131,3 +124,15 @@ body a{
 .sidebar ul a{
     color: #005544;
 }
+
+/** TODO: add screen sizes for paddings **/
+@media only screen and (max-width:600px) {
+    #content {
+        padding: 20px 10px 0px 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+      body {
+              background-color: lightblue;
+                }
+            }
