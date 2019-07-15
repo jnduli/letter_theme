@@ -71,6 +71,23 @@ body a{
     margin: 0 auto;
     padding: 60px 40px 100px 40px;
 }
+
+.article-content header {
+    text-align: center;
+}
+
+.article-content .description {
+    text-align: center;
+}
+.article-content .description a{
+    text-decoration: none;
+    padding: 5px;
+}
+.article-content .description a:hover{
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+}
+
 .entry-title{
     font-size: 1.5rem;
 }
