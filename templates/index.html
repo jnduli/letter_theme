@@ -11,13 +11,13 @@
             <article class="hentry">
                 <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                 <footer class="post-info">
-                    <div class = row>
-                    <time class="published col c3" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
-                    <address class="vcard author col c3">By
+                    <div class="row">
+                        <time class="published col c2" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}, </time>
+                        <address class="vcard author col c2">&nbsp;by
                         {% for author in article.authors %}
-                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                            <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                         {% endfor %}
-                    </address>
+                        </address>
                     </div>
                 </footer><!-- /.post-info -->
                 <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
