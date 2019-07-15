@@ -1,12 +1,10 @@
 /** importing fonts to use in the site **/
 /** font for navigation bar **/
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
-@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
 body{
-    font-family: monospace;
+    font-family: 'Oxygen', monospace;
     background: #eeeeee;
     color: #444444; 
 }
@@ -14,9 +12,6 @@ body a{
     color: #005544;
 }
 /** formating the header **/
-.header {
-    font-family: 'Oxygen', sans-serif;
-}
 .header h1{
     border-bottom: 1px solid #333333;
     text-align: center;
@@ -114,7 +109,7 @@ body a{
 .sidebar ul{
     list-style-type: circle;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: #005544;
     /* padding-left: 15rem; */
 }
