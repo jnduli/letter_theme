@@ -2,9 +2,15 @@
 <html lang="{{ DEFAULT_LANG }}">
     <head>
         {% block head %}
+
+        {% if article %}
+        <title>{{ SITENAME }}: {{ article.title }}</title>
+        {% else %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        {% endif%}
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+        <link rel="shortcut icon" href="favicon.ico">
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
         {% endif %}
@@ -31,8 +37,7 @@
         {% endif %}
         {% endblock head %}
         <link rel="stylesheet" href="{{  SITEURL  }}/theme/css/entireframework.min.css">
-        <link rel="stylesheet" href="{{  SITEURL
-        }}/theme/css/style.css">
+        <link rel="stylesheet" href="{{  SITEURL }}/theme/css/style.css">
         <link rel="stylesheet" href="{{  SITEURL  }}/theme/css/bw.css">
 
         {% include "include/googleanalytics.html" %}
